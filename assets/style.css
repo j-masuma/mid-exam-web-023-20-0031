@@ -259,7 +259,7 @@
     left: 186px;
   }
   
-  .BISE-sukkur-landing .group-5 {
+  .BISE-sukkur-landing .form {
     position: absolute;
     width: 124px;
     height: 223px;
@@ -541,6 +541,7 @@
     left: 0;
   }
   
+  
   .BISE-sukkur-landing .overlap-7 {
     position: absolute;
     width: 127px;
@@ -611,3 +612,10 @@
     line-height: normal;
   }
   
+  @media screen and (max-width: 480px) {
+    .form-section input{
+        display: flex;
+        
+    }
+
+  }

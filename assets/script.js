@@ -1,9 +1,15 @@
-function submitted(){
-    const name = document.getElementById('name');
-    const phone = document.getElementById('phone');
-    const email = document.getElementById('email');
-    const address = document.getElementById('address');
-    const description = document.getElementById('description');
+function submitted(event) {
+    event.preventDefault(); // Prevent the form from actually submitting
 
-    console.log(name.value, email.value, phone.value, address.value, description.value);
-}
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const description = document.getElementById('description').value;
+
+    console.log(name, phone, email, address, description);
+  }
+
+ 
+  const form = document.querySelector('form');
+  form.addEventListener('submit', submitted);
